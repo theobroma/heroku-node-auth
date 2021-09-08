@@ -3,16 +3,13 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
-    "dependencies": {
-        "concurrently": "^6.x"
-    },
     "devDependencies": {},
     "engines": {
         "node": "^14"
     },
     "scripts": {
         "install": "cd server && npm install",
-        "postinstall": "cd server && npm run build",
+        "postinstall": "cd server && npm run tsc",
         "start:prod": "cd server && npm start",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
