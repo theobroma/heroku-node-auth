@@ -6,6 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 require("express-async-errors");
 const express_1 = __importDefault(require("express"));
 const app = (0, express_1.default)();
+const port = process.env.PORT || 3000;
 app.get('/', (req, res) => res.json('test'));
-app.listen(3000, () => console.log('http://localhost:3000'));
+app.listen(port, () => console.log(`http://localhost:${port}`));
 //# sourceMappingURL=index.js.map
