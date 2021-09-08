@@ -7,7 +7,7 @@
     "scripts": {
         "dev": "tsnd --transpile-only src",
         "prebuild": "rm -rf dist",
-        "tsc": "tsc",
+        "build": "tsc",
         "start": "NODE_ENV=production node -r source-map-support/register dist/index.js",
         "lint": "eslint --fix src/**/*.{js,jsx,ts,tsx}"
     },
